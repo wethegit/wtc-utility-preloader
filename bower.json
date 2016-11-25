@@ -1,0 +1,16 @@
+{
+  "name": "wtc-utility-preloader",
+  "homepage": "https://github.com/wethegit/wtc-utility-preloader",
+  "authors": [
+    "Marlon Marcello <marlon@wethecollective.com>"
+  ],
+  "description": "Simple preloader",
+  "main": "src/Preloader.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    ".DS_Store"
+  ]
+}
