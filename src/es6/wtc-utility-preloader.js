@@ -38,6 +38,12 @@
 
    }
 
+
+   /**
+    * Add Files to preloader
+    *
+    * @param  {String or Array} files String filename or Array of File Objects
+    */
    add(files) {
      if(typeof files === 'string' || files instanceof String) {
        let type = arguments[1] || 'image';
@@ -115,6 +121,11 @@
      }
    }
 
+   /**
+    * Trigger preloader to load assets. Call callback function when complete.
+    *
+    * @param  {function} callback - Callback function
+    */
    load(callback) {
      if (window.Promise) {
        this.loadWithPromises(callback);

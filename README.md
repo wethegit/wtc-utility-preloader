@@ -4,12 +4,27 @@ Simple preloader class.
 ### Requirements:
 none
 
-### Namespace:
-window.wtc.utilities
+### Options:
+
+```javascript
+Preloader(<Object> options)
+```
+Default options
+``` javascript
+{
+  debug: false //set to true if you want console logs.
+}
+```
 
 ### Usage:
-```javascript  
-var preloader = new window.wtc.utilities.Preloader();
+```javascript
+//ES6 import
+import Preloader from 'wtc-utility-preloader';
+
+//Instanciate new Preloader
+let preloader = new Preloader();
+
+//ADD assets
 preloader.add('imagename.jpg', 'image');
 // OR use an ARRAY
 preloader.add([
