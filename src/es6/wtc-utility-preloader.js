@@ -53,7 +53,7 @@
        });
      } else {
        //appending files array to _files array
-       _files.map(this.addFiles);
+       files.map(this.addFiles);
      }
    }
 
@@ -86,9 +86,13 @@
      //wait until all images are loaded.
      Promise.all(imagePromises).then(function(file){
        callback();
-     }).catch(function(){
+    }).catch(function(err){
        if(that.debug) {
-         console.log('there was an error');
+         console.log('there was an error:');
+         console.log('Error Message:')
+         console.log(err.message);
+         console.log('Error Object:')
+         console.log(err);
        }
      });
    }
