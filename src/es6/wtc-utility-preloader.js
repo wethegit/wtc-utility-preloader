@@ -121,7 +121,7 @@
      }
      this.incrementLoadCounter();
      if(this.getLoadCounter() === this.filesLoading.length && callback) {
-       callback();
+       callback(this.getFiles());
      }
    }
 
